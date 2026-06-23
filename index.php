@@ -139,7 +139,7 @@ if (!empty($code)) {
 
     <!-- Ambient Audio -->
     <audio id="bg-music" loop>
-      <source src="metschool-song.mpeg" type="audio/mpeg">
+      <source src="onemoment.mp3" type="audio/mp3">
     </audio>
 
     <!-- Cover Overlay Screen -->
@@ -153,19 +153,18 @@ if (!empty($code)) {
       <div class="absolute inset-6 sm:inset-8 border border-secondary/5 rounded-3xl pointer-events-none"></div>
 
       <!-- Cover Content -->
-      <div class="relative z-10 max-w-xl mx-auto flex flex-col items-center">
+      <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
         <!-- Logo -->
         <div class="flex items-center gap-3 bg-[#D2DBC6]/5 border border-[#D2DBC6]/15 rounded-full px-5 py-2 mb-6 backdrop-blur-md">
           <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-10 h-10 object-contain" />
-          <span class="text-[#D2DBC6] text-xs font-bold uppercase tracking-wider">SMK Metland School</span>
         </div>
         
-        <h2 class="font-display text-secondary text-base sm:text-lg tracking-[0.25em] uppercase mb-1">GCP Award 2026</h2>
-        <p class="text-[#D2DBC6]/50 text-[10px] tracking-widest uppercase mb-10">Generasi Cinta Prestasi</p>
+        <h2 class="font-display text-secondary text-base sm:text-lg tracking-[0.25em] uppercase mb-1">APRESIASI SISWA ANGKATAN X - TAHUN 2026</h2>
+        <p class="text-[#D2DBC6]/50 text-[10px] tracking-widest uppercase mb-10">SMK Pariwisata Metland School</p>
         
         <div class="w-20 h-px bg-gradient-to-r from-transparent via-secondary to-transparent mb-10"></div>
         
-        <p class="text-[#D2DBC6]/60 text-xs uppercase tracking-[0.2em] mb-3">Dear Honorable Guest,</p>
+        <p class="text-[#D2DBC6]/60 text-xs uppercase tracking-[0.2em] mb-3">Teruntuk Bapak/Ibu/Wali atau Tamu Undangan,</p>
         <h1 class="font-display text-[#D2DBC6] mb-2 leading-tight uppercase px-4" style="font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 700; letter-spacing: 0.05em;">
             <?= htmlspecialchars($guestName) ?>
         </h1>
@@ -218,8 +217,8 @@ if (!empty($code)) {
         <!-- Desktop Nav -->
         <div class="hidden md:flex gap-8 items-center text-sm font-semibold tracking-wider uppercase">
           <a class="text-secondary border-b-2 border-secondary pb-0.5" href="#hero">Event</a>
+          <a class="text-[#D2DBC6]/70 hover:text-secondary transition-colors" href="#invitation">Invitation</a>
           <a class="text-[#D2DBC6]/70 hover:text-secondary transition-colors" href="#schedule">Schedule</a>
-          <a class="text-[#D2DBC6]/70 hover:text-secondary transition-colors" href="#about">Award</a>
           <a class="text-[#D2DBC6]/70 hover:text-secondary transition-colors" href="#gallery">Gallery</a>
         </div>
 
@@ -241,8 +240,8 @@ if (!empty($code)) {
       <div id="mobile-menu" class="md:hidden bg-[#0E1E0A]/97 backdrop-blur-xl border border-secondary/15 rounded-2xl mt-3">
         <div class="px-6 py-4 flex flex-col gap-1">
           <a class="text-secondary font-semibold py-3 border-b border-[#D2DBC6]/5 text-sm tracking-wider uppercase" href="#hero" onclick="closeMobileMenu()">Event</a>
+          <a class="text-[#D2DBC6]/80 hover:text-secondary py-3 border-b border-[#D2DBC6]/5 text-sm tracking-wider uppercase transition-colors" href="#invitation" onclick="closeMobileMenu()">Invitation</a>
           <a class="text-[#D2DBC6]/80 hover:text-secondary py-3 border-b border-[#D2DBC6]/5 text-sm tracking-wider uppercase transition-colors" href="#schedule" onclick="closeMobileMenu()">Schedule</a>
-          <a class="text-[#D2DBC6]/80 hover:text-secondary py-3 border-b border-[#D2DBC6]/5 text-sm tracking-wider uppercase transition-colors" href="#about" onclick="closeMobileMenu()">Award</a>
           <a class="text-[#D2DBC6]/80 hover:text-secondary py-3 border-b border-[#D2DBC6]/5 text-sm tracking-wider uppercase transition-colors" href="#gallery" onclick="closeMobileMenu()">Gallery</a>
           <a href="#rsvp" onclick="closeMobileMenu()" class="mt-3 bg-secondary text-primary px-6 py-3 rounded-full font-bold text-sm text-center hover:bg-secondary/90 transition-colors">
             Confirm Attendance
@@ -313,7 +312,7 @@ if (!empty($code)) {
 
           <!-- CTAs -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
-            <a class="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-all shadow-[0_0_25px_rgba(226,193,47,0.3)] flex items-center justify-center gap-2" href="#about">
+            <a class="bg-secondary text-primary px-8 py-4 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-all shadow-[0_0_25px_rgba(226,193,47,0.3)] flex items-center justify-center gap-2" href="#invitation">
               VIEW INVITATION
               <span class="material-symbols-outlined text-base">expand_more</span>
             </a>
@@ -331,7 +330,7 @@ if (!empty($code)) {
       </section>
 
       <!-- ===== HEADMASTER LETTER ===== -->
-      <section class="py-20 sm:py-28 bg-[#182E10] border-y border-secondary/5">
+      <section class="py-20 sm:py-28 bg-[#182E10] border-y border-secondary/5" id="invitation">
         <div class="max-w-5xl mx-auto px-5 sm:px-8 lg:px-16">
           <div class="bg-[#0E1E0A] rounded-3xl sm:rounded-[3rem] overflow-hidden flex flex-col md:flex-row items-stretch reveal shadow-2xl border border-secondary/10">
             <!-- Content -->
@@ -376,7 +375,7 @@ if (!empty($code)) {
                 <span class="material-symbols-outlined text-secondary text-3xl">event</span>
               </div>
               <h3 class="font-display font-bold text-xl mb-3 text-[#D2DBC6]">Date &amp; Time</h3>
-              <p class="text-[#D2DBC6]/70 leading-relaxed">Sabtu, 04 Juli 2026<br/>08:00 – 17:00 WIB</p>
+              <p class="text-[#D2DBC6]/70 leading-relaxed">Sabtu, 04 Juli 2026<br/>08:00 s.d Selesai</p>
             </div>
             <div class="bg-[#22401A] p-8 sm:p-10 rounded-3xl reveal shadow-lg border border-secondary/25" style="transition-delay:150ms">
               <div class="w-14 h-14 bg-secondary/15 rounded-2xl flex items-center justify-center mb-6">
@@ -394,8 +393,8 @@ if (!empty($code)) {
               </div>
               <h3 class="font-display font-bold text-xl mb-3 text-[#D2DBC6]">Dress Code</h3>
               <p class="text-[#D2DBC6]/70 leading-relaxed">
-                  <b class="text-secondary">Ladies:</b> Dark Formal Dress<br>
-                  <b class="text-secondary">Gentlemen:</b> Dark Formal Suit
+                  <b class="text-secondary">Siswa:</b> Formal + Almamater<br>
+                  <b class="text-secondary">Tamu VIP:</b> Formal
               </p>
             </div>
           </div>
@@ -411,7 +410,7 @@ if (!empty($code)) {
               Event Schedule
             </h2>
             <p class="text-[#D2DBC6]/60 mt-3 text-base">
-              Program lineup for the Achievement Award Ceremony
+              Program lineup for the Appreciation Ceremony
             </p>
           </div>
 
@@ -421,36 +420,48 @@ if (!empty($code)) {
             <!-- 1 -->
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <span class="text-secondary font-bold text-lg">13:00 - 13:30</span>
+                <span class="text-secondary font-bold text-lg">08:00 - 08:30</span>
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Registration</h4>
-                <p class="text-[#D2DBC6]/60">Guest registration and check-in QR Code scanner.</p>
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Opening Ceremony</h4>
+                <!-- <p class="text-[#D2DBC6]/60">Guest arrival and check-in QR Code scanner.</p> -->
               </div>
             </div>
 
             <!-- 2 -->
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Opening Ceremony</h4>
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Persembahan untuk Orang Tua</h4>
                 <!-- <p class="text-gray-400">Official opening of the event.</p> -->
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <span class="text-secondary font-bold text-lg">13:30 - 14:00</span>
+                <span class="text-secondary font-bold text-lg">08:30 - 09:30</span>
               </div>
             </div>
-
+            
             <!-- 3 -->
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <span class="text-secondary font-bold text-lg">14:00 - 15:30</span>
+                <span class="text-secondary font-bold text-lg">09:30 - 10:00</span>
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Awarding Event</h4>
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Sambutan-sambutan</h4>
                 <!-- <p class="text-gray-400">Awarding event performances.</p> -->
+              </div>
+            </div>
+            
+            <!-- 2 -->
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
+              <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Apresiasi Siswa</h4>
+                <!-- <p class="text-gray-400">Official opening of the event.</p> -->
+              </div>
+              <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
+              <div class="w-full md:w-5/12 pl-12">
+                <span class="text-secondary font-bold text-lg">10:00 - 11:30</span>
               </div>
             </div>
 
@@ -462,14 +473,14 @@ if (!empty($code)) {
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <span class="text-secondary font-bold text-lg">15:30 - 17:00</span>
+                <span class="text-secondary font-bold text-lg">11:30 - 12:30</span>
               </div>
             </div>
 
             <!-- 5 -->
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <span class="text-secondary font-bold text-lg">17:00</span>
+                <span class="text-secondary font-bold text-lg">12:30</span>
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
@@ -492,16 +503,16 @@ if (!empty($code)) {
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
             <div class="aspect-square overflow-hidden rounded-2xl sm:rounded-3xl reveal shadow-md group border border-secondary/5 hover:border-secondary/20 transition-colors" style="transition-delay:0ms">
-              <img alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/gcp/gallery/1.JPG" />
+              <img alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/wisuda/1.JPG" />
             </div>
             <div class="aspect-square overflow-hidden rounded-2xl sm:rounded-3xl reveal shadow-md group border border-secondary/5 hover:border-secondary/20 transition-colors" style="transition-delay:80ms">
-              <img alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/gcp/gallery/4.JPG" />
+              <img alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/wisuda/4.JPG" />
             </div>
             <div class="aspect-square overflow-hidden rounded-2xl sm:rounded-3xl reveal shadow-md group border border-secondary/5 hover:border-secondary/20 transition-colors" style="transition-delay:160ms">
-              <img alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/gcp/gallery/3.JPG" />
+              <img alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/wisuda/3.JPG" />
             </div>
             <div class="aspect-square overflow-hidden rounded-2xl sm:rounded-3xl reveal shadow-md group border border-secondary/5 hover:border-secondary/20 transition-colors" style="transition-delay:240ms">
-              <img alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/gcp/gallery/2.JPG" />
+              <img alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer" src="img/wisuda/2.JPG" />
             </div>
           </div>
         </div>
