@@ -101,6 +101,7 @@ switch ($action) {
         }
 
         // Mark as checked in
+        date_default_timezone_set('Asia/Jakarta');
         $now = date('Y-m-d H:i:s');
         $update = $pdo->prepare("UPDATE students SET checked_in = 1, checked_in_at = ? WHERE code = ?");
         $update->execute([$now, $code]);

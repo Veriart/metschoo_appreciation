@@ -8,12 +8,13 @@ $code = $_GET['code'] ?? '';
 $directCheckin = null;
 
 if (!empty($code)) {
-    // Process direct check-in on URL visit
-    $stmt = $pdo->prepare("SELECT * FROM students WHERE code = ?");
-    $stmt->execute([$code]);
-    $student = $stmt->fetch();
-
-    if ($student) {
+  // Process direct check-in on URL visit
+  $stmt = $pdo->prepare("SELECT * FROM students WHERE code = ?");
+  $stmt->execute([$code]);
+  $student = $stmt->fetch();
+  
+  if ($student) {
+        date_default_timezone_set('Asia/Jakarta');
         $now = date('Y-m-d H:i:s');
         $update = $pdo->prepare("UPDATE students SET checked_in = 1, checked_in_at = ? WHERE code = ?");
         $update->execute([$now, $code]);
