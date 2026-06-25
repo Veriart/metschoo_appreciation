@@ -663,7 +663,7 @@ if (!empty($code)) {
                     </div>
                     <div class="col-span-2">
                       <p class="text-[#D2DBC6]/50 text-[9px] uppercase tracking-wider">Waktu & Tempat</p>
-                      <p class="text-[#D2DBC6] text-xs font-semibold">Jumat, 19 Juni 2026 @ 13:00 WIB<br>Auditorium SMK Metland</p>
+                      <p class="text-[#D2DBC6] text-xs font-semibold">Sabtu, 04 Juli 2026 @ 07:00 WIB<br>Ballroom Metropolitan</p>
                     </div>
                   </div>
                 </div>
