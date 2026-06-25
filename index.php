@@ -40,8 +40,8 @@ if (!empty($code)) {
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>GCP Award | SMK Pariwisata Metland School</title>
-    <meta content="An appreciation night for the finest students of SMK Pariwisata Metland School who have brought pride to our school on the national and international stage." name="description" />
+    <title>Apresiasi Siswa | SMK Pariwisata Metland School</title>
+    <meta content="An appreciation event for the finest students of SMK Pariwisata Metland School who have brought pride to our school on the national and international stage." name="description" />
     <link href="img/metschoo/Metschoo.png" rel="icon" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -145,7 +145,7 @@ if (!empty($code)) {
     <!-- Cover Overlay Screen -->
     <div id="cover-overlay" class="fixed inset-0 z-[150] flex flex-col items-center justify-center bg-[#0E1E0A] text-center px-5 overflow-hidden">
       <!-- Background Drone blur overlay -->
-      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('img/gcp/drone-metland.png'); filter: blur(5px);"></div>
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('img/metschoo/drone-metland.png'); filter: blur(5px);"></div>
       <div class="absolute inset-0 bg-gradient-to-b from-[#0E1E0A]/70 via-[#0E1E0A]/92 to-[#0E1E0A]"></div>
       
       <!-- Elegant gold thin border frame -->
@@ -153,10 +153,10 @@ if (!empty($code)) {
       <div class="absolute inset-6 sm:inset-8 border border-secondary/5 rounded-3xl pointer-events-none"></div>
 
       <!-- Cover Content -->
-      <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center">
+      <div class="relative md:glass-card rounded-3xl py-10 z-10 max-w-5xl mx-auto flex flex-col items-center">
         <!-- Logo -->
-        <div class="flex items-center gap-3 bg-[#D2DBC6]/5 border border-[#D2DBC6]/15 rounded-full px-5 py-2 mb-6 backdrop-blur-md">
-          <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-10 h-10 object-contain" />
+        <div class="flex items-center gap-3 px-5 py-2 mb-6">
+          <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-16 h-16 object-contain" />
         </div>
         
         <h2 class="font-display text-secondary text-base sm:text-lg tracking-[0.25em] uppercase mb-1">APRESIASI SISWA ANGKATAN X - TAHUN 2026</h2>
@@ -257,15 +257,29 @@ if (!empty($code)) {
         <div class="w-full mx-auto px-5 sm:px-8 py-22 flex flex-col items-center text-center reveal" style="transition-delay:200ms">
 
           <!-- Badge -->
-          <span class="inline-flex items-center gap-2 px-5 py-2 bg-secondary/15 border border-secondary/30 text-secondary text-xs font-bold rounded-full mb-6 tracking-[0.15em] uppercase backdrop-blur-sm">
+          <span class="inline-flex items-center gap-2 px-5 py-2 bg-secondary/15 border border-secondary/30 text-secondary text-[10px] sm:text-xs md:text-sm font-bold rounded-full mb-6 tracking-[0.15em] uppercase backdrop-blur-sm">
             SMK Pariwisata Metland School
           </span>
 
           <!-- Title -->
-          <h1 class="font-display text-[#D2DBC6] mb-4 leading-none uppercase tracking-wide" style="font-size: clamp(2.8rem, 10vw, 6.5rem); font-weight: 800; letter-spacing: 0.04em;">
-            APRESIASI SISWA<br/>
-            <span class="text-secondary italic" style="font-weight: 700;">ANGKATAN X - 2026</span>
-          </h1>
+          <h1 class="
+                font-display
+                text-[#D2DBC6]
+                mb-4
+                leading-none
+                uppercase
+                tracking-wide
+                text-3xl
+                sm:text-3xl
+                md:text-6xl
+                lg:text-7xl
+                font-extrabold
+            ">
+                APRESIASI SISWA<br/>
+                <span class="text-secondary text-xl sm:text-lg md:text-6xl italic font-bold">
+                  ANGKATAN X - 2026
+                </span>
+            </h1>
 
           <!-- Subtitle -->
           <p class="text-[#D2DBC6]/70 mb-8 leading-relaxed max-w-5xl" style="font-size: clamp(0.95rem, 2.5vw, 1.1rem)">
@@ -281,7 +295,7 @@ if (!empty($code)) {
             <div class="flex items-center gap-2 h-4 w-px bg-[#D2DBC6]/10 hidden sm:block"></div>
             <div class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-lg">schedule</span>
-              08:00 s.d Selesai
+              07:30 s.d Selesai
             </div>
             <div class="flex items-center gap-2 h-4 w-px bg-[#D2DBC6]/10 hidden sm:block"></div>
             <div class="flex items-center gap-2">
@@ -337,26 +351,31 @@ if (!empty($code)) {
             <div class="w-full md:w-full p-8 sm:p-12 md:p-16 flex flex-col justify-center">
               <span class="material-symbols-outlined text-secondary text-5xl mb-5" style="font-variation-settings:'FILL' 1">format_quote</span>
               <h2 class="font-display text-2xl sm:text-3xl font-bold mb-7 text-white"> APRESIASI SISWA ANGKATAN X - TAHUN 2026</h2>
-              <p class="text-justify font-body italic text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
-                Dengan penuh rasa syukur kepada Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu Orang Tua/Wali Siswa untuk hadir dalam momen istimewa yang menjadi penanda akhir sebuah perjalanan sekaligus awal dari langkah-langkah besar berikutnya.
+              <p class="text-justify font-body italic text-gray-300 mb-8 leading-relaxed text-base sm:text-sm">
+                Dengan penuh rasa syukur kepada Tuhan Yang Maha Esa, kami mengundang Bapak/Ibu Orang Tua/Wali Siswa serta tamu undangan untuk hadir dalam momen istimewa yang menjadi penanda akhir sebuah perjalanan sekaligus awal dari langkah-langkah besar berikutnya.
               </p>
-              <p class="text-justify font-body italic text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
-                Mari bersama menjadi saksi atas pencapaian putra-putri terbaik kami, yang dengan semangat dan dedikasi telah menorehkan cerita berharga dalam perjalanan pendidikan mereka. Kehadiran Bapak/Ibu akan menjadi hadiah terindah bagi para siswa pada hari yang penuh makna ini.
+              <p class="text-justify font-body italic text-gray-300 mb-8 leading-relaxed text-base sm:text-sm">
+                Mari bersama menjadi saksi atas pencapaian putra-putri terbaik kita, yang dengan semangat dan dedikasi telah menorehkan cerita berharga dalam perjalanan pendidikan mereka. Kehadiran Bapak/Ibu akan menjadi hadiah terindah bagi para siswa pada hari yang penuh makna ini.
                 
                 Kami menantikan kehadiran Bapak/Ibu untuk berbagi kebahagiaan, kebanggaan, dan doa terbaik bagi masa depan generasi penerus bangsa.
                 
                 “Masa depan bukanlah sesuatu yang ditunggu, melainkan sesuatu yang dipersiapkan dan diwujudkan.”
               </p>
-              <p class="font-body italic text-gray-300 mb-12 leading-relaxed text-base sm:text-lg text-end">
+              <p class="font-body italic text-gray-300 mb-12 leading-relaxed text-base sm:text-sm text-end">
                 Salam Hormat,
                 <!-- Kepala SMK Pariwisata Metland School <br> -->
                 <!-- Dr. Darmawan Sunarja., Drs., MM. Par -->
               </p>
               </p>
-              <div class="border-r-4 border-secondary pr-5 text-end">
-                <p class="font-display font-bold text-white text-xl">Dr. Darmawan Sunarja, Drs., MM.Par</p>
-                <p class="text-gray-400 text-xs font-semibold uppercase tracking-[0.15em] mt-1">The Principal of SMK Pariwisata Metland School</p>
-              </div>
+              <div class="border-r-4 border-secondary pr-2 text-end">
+              <p class="font-display font-bold text-white text-sm sm:text-lg">
+                Dr. Darmawan Sunarja, Drs., MM.Par
+              </p>
+              
+              <p class="text-gray-400 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] mt-1">
+                Kepala SMK Pariwisata Metland School
+              </p>
+            </div>
             </div>
           </div>
         </div>
@@ -394,7 +413,7 @@ if (!empty($code)) {
               <h3 class="font-display font-bold text-xl mb-3 text-[#D2DBC6]">Dress Code</h3>
               <p class="text-[#D2DBC6]/70 leading-relaxed">
                   <b class="text-secondary">Siswa:</b> Formal + Almamater<br>
-                  <b class="text-secondary">Tamu VIP:</b> Formal
+                  <b class="text-secondary">Tamu VIP:</b> Formal/Batik
               </p>
             </div>
           </div>
@@ -418,6 +437,17 @@ if (!empty($code)) {
             <div class="timeline-line block"></div>
 
             <!-- 1 -->
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
+              <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Registration</h4>
+                <!-- <p class="text-gray-400">Official opening of the event.</p> -->
+              </div>
+              <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
+              <div class="w-full md:w-5/12 pl-12">
+                <span class="text-secondary font-bold text-lg">07:00 - 08:00</span>
+              </div>
+            </div>
+
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
                 <span class="text-secondary font-bold text-lg">08:00 - 08:30</span>
@@ -461,31 +491,30 @@ if (!empty($code)) {
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <span class="text-secondary font-bold text-lg">10:00 - 11:30</span>
+                <span class="text-secondary font-bold text-lg">10:00 - 12:00</span>
               </div>
             </div>
 
-            <!-- 4 -->
             <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Entertainment</h4>
-                <p class="text-[#D2DBC6]/60">Introducing Metschoo Entertainment.</p>
+                <span class="text-secondary font-bold text-lg">12:00 - 13:00</span>
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <span class="text-secondary font-bold text-lg">11:30 - 12:30</span>
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Entertainment</h4>
+                <p class="text-[#D2DBC6]/60">Introducing Metschoo Entertainment.</p>
               </div>
             </div>
 
             <!-- 5 -->
-            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between reveal">
+            <div class="relative flex flex-col md:flex-row md:items-center md:justify-between mb-12 md:mb-16 reveal">
               <div class="w-full md:w-5/12 text-right md:pr-12 pl-12 md:pl-0">
-                <span class="text-secondary font-bold text-lg">12:30</span>
+                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Closing</h4>
+                <!-- <p class="text-gray-400">Official opening of the event.</p> -->
               </div>
               <div class="hidden md:block w-5 h-5 bg-secondary rounded-full border-4 border-[#182E10] shadow-lg z-10"></div>
               <div class="w-full md:w-5/12 pl-12">
-                <h4 class="font-bold text-[#D2DBC6] text-xl mb-1">Closing</h4>
-                <!-- <p class="text-gray-400">Event Finished</p> -->
+                <span class="text-secondary font-bold text-lg">13:00</span>
               </div>
             </div>
 
@@ -530,7 +559,7 @@ if (!empty($code)) {
               <div class="text-center mb-10">
                 <!-- <span class="text-secondary text-xs font-bold tracking-[0.2em] uppercase mb-3 block">RSVP Form</span> -->
                 <h2 class="font-display text-3xl sm:text-4xl font-bold text-[#D2DBC6]">RSVP</h2>
-                <p class="text-[#D2DBC6]/60 mt-3">Please confirm your attendance by filling in the details below.</p>
+                <p class="text-[#D2DBC6]/60 mt-3">Silahkan isi formulir RSVP untuk mengkonfirmasi kehadiran Anda.</p>
               </div>
               <form class="space-y-5" id="rsvp-form">
                 <!-- Keep code in hidden field if student -->
@@ -538,14 +567,14 @@ if (!empty($code)) {
                 
                 <div class="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Full Name</label>
+                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Nama Lengkap</label>
                     <input type="text" name="name" id="form-name" placeholder="Enter your full name" required 
                       <?= $isStudent ? 'readonly' : '' ?>
                       value="<?= htmlspecialchars($guestName) ?>"
                       class="form-input w-full bg-[#0E1E0A] border border-secondary/25 rounded-2xl px-4 py-3.5 text-[#D2DBC6] text-sm transition-all focus:border-secondary <?= $isStudent ? 'opacity-60 cursor-not-allowed' : '' ?>" />
                   </div>
                   <div>
-                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Classroom</label>
+                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Kelas</label>
                     <?php if ($isStudent): ?>
                         <input type="text" name="classroom" value="<?= htmlspecialchars($classroom) ?>" readonly
                           class="form-input w-full bg-[#0E1E0A] border border-secondary/25 rounded-2xl px-4 py-3.5 text-[#D2DBC6] text-sm transition-all opacity-60 cursor-not-allowed" />
@@ -565,30 +594,30 @@ if (!empty($code)) {
                     <?php endif; ?>
                   </div>
                   <div>
-                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">WhatsApp Number</label>
+                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">No. WhatsApp</label>
                     <input type="tel" name="whatsapp" value="<?= htmlspecialchars($whatsapp ?? '') ?>" placeholder="+62 8xx xxxx xxxx" required
                       class="form-input w-full bg-[#0E1E0A] border border-secondary/25 rounded-2xl px-4 py-3.5 text-[#D2DBC6] text-sm transition-all focus:border-secondary" />
                   </div>
                   <div>
-                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Attendance Status</label>
+                    <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Status Kehadiran</label>
                     <select name="rsvp_status" id="form-rsvp-status" class="form-input w-full bg-[#0E1E0A] border border-secondary/25 rounded-2xl px-4 py-3.5 text-[#D2DBC6] text-sm transition-all focus:border-secondary appearance-none">
-                      <option value="Attending" <?= $rsvpStatus === 'Attending' ? 'selected' : '' ?>>Will Attend</option>
-                      <option value="Absent" <?= $rsvpStatus === 'Absent' ? 'selected' : '' ?>>Unable to Attend</option>
+                      <option value="Attending" <?= $rsvpStatus === 'Attending' ? 'selected' : '' ?>>Hadir</option>
+                      <option value="Absent" <?= $rsvpStatus === 'Absent' ? 'selected' : '' ?>>Tidak Hadir</option>
                     </select>
                   </div>
                 </div>
                 <div>
-                  <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Companion</label>
+                  <label class="block font-bold text-[#D2DBC6] text-sm mb-2 px-1">Pendamping</label>
                   <select name="companion_type" id="form-companion-type" class="form-input w-full bg-[#0E1E0A] border border-secondary/25 rounded-2xl px-4 py-3.5 text-[#D2DBC6] text-sm transition-all focus:border-secondary appearance-none">
-                    <option value="none" <?= $companionType === 'none' ? 'selected' : '' ?>>Without Companion</option>
-                    <option value="parents" <?= $companionType === 'parents' ? 'selected' : '' ?>>Parents</option>
-                    <option value="sibling" <?= $companionType === 'sibling' ? 'selected' : '' ?>>Sibling / Relative</option>
+                    <option value="none" <?= $companionType === 'none' ? 'selected' : '' ?>>Tanpa Pendamping</option>
+                    <option value="parents" <?= $companionType === 'parents' ? 'selected' : '' ?>>Orang Tua</option>
+                    <option value="sibling" <?= $companionType === 'sibling' ? 'selected' : '' ?>>Saudara / Keluarga</option>
                   </select>
-                  <small class="text-red-500">Only one companion is allowed.</small>
+                  <small class="text-red-500">Undangan hanya berlaku untuk dua (2) orang pendamping.</small>
                 </div>
                 <div class="pt-3">
                   <button type="submit" class="w-full bg-secondary text-primary py-4 rounded-2xl font-bold text-xs tracking-widest uppercase hover:bg-secondary/90 hover:scale-[1.01] transition-all shadow-[0_0_20px_rgba(212,175,55,0.15)]">
-                    SUBMIT CONFIRMATION
+                    KONFIRMASI
                   </button>
                 </div>
               </form>

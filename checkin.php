@@ -128,7 +128,7 @@ $recentCheckins = $pdo->query("SELECT * FROM students WHERE checked_in = 1 ORDER
           
           <!-- Manual Code Input -->
           <div class="mt-5 pt-4 border-t border-white/5 flex gap-3">
-            <input type="text" id="manual-code" placeholder="Input kode manual (e.g. GCP-A1B2C)" 
+            <input type="text" id="manual-code" placeholder="Input kode manual (e.g. MS-A1B2C)" 
               class="flex-1 bg-[#0D1F0C] border border-secondary/25 rounded-xl px-4 py-2 text-[#F5F0DC] text-sm focus:border-secondary focus:ring-1 focus:ring-secondary/50 placeholder-[#F5F0DC]/30 uppercase" />
             <button id="btn-manual-submit" class="bg-secondary text-primary font-bold text-xs tracking-wider uppercase px-5 py-2.5 rounded-xl hover:bg-secondary/90 transition-colors">
               Check-in
@@ -364,7 +364,7 @@ $recentCheckins = $pdo->query("SELECT * FROM students WHERE checked_in = 1 ORDER
         // Stop scanning temporarily
         stopScanner();
         
-        // QR Code will encode a URL like: http://domain/checkin.php?code=GCP-XYZ
+        // QR Code will encode a URL like: http://domain/checkin.php?code=MS-XYZ
         let code = decodedText;
         if (decodedText.includes('code=')) {
           const urlParams = new URLSearchParams(decodedText.split('?')[1]);
