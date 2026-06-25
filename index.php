@@ -295,7 +295,7 @@ if (!empty($code)) {
             <div class="flex items-center gap-2 h-4 w-px bg-[#D2DBC6]/10 hidden sm:block"></div>
             <div class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-lg">schedule</span>
-              07:30 s.d Selesai
+              07:00 s.d Selesai
             </div>
             <div class="flex items-center gap-2 h-4 w-px bg-[#D2DBC6]/10 hidden sm:block"></div>
             <div class="flex items-center gap-2">
@@ -394,7 +394,7 @@ if (!empty($code)) {
                 <span class="material-symbols-outlined text-secondary text-3xl">event</span>
               </div>
               <h3 class="font-display font-bold text-xl mb-3 text-[#D2DBC6]">Date &amp; Time</h3>
-              <p class="text-[#D2DBC6]/70 leading-relaxed">Sabtu, 04 Juli 2026<br/>08:00 s.d Selesai</p>
+              <p class="text-[#D2DBC6]/70 leading-relaxed">Sabtu, 04 Juli 2026<br/>07:00 s.d Selesai</p>
             </div>
             <div class="bg-[#22401A] p-8 sm:p-10 rounded-3xl reveal shadow-lg border border-secondary/25" style="transition-delay:150ms">
               <div class="w-14 h-14 bg-secondary/15 rounded-2xl flex items-center justify-center mb-6">
@@ -801,7 +801,7 @@ if (!empty($code)) {
       });
 
       // Countdown Date
-      const countdownDate = new Date("July 04, 2026 08:00:00").getTime();
+      const countdownDate = new Date("July 04, 2026 07:00:00").getTime();
       const secEl = document.getElementById("seconds");
       const countInterval = setInterval(() => {
         const dist = countdownDate - Date.now();
