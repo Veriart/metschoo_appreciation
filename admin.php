@@ -58,7 +58,7 @@ if (!$isLogged):
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Admin Login | GCP Award 2026</title>
+    <title>Admin Login | Metland Apresiasi Siswa</title>
     <link href="img/metschoo/Metschoo.png" rel="icon" />
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -79,7 +79,7 @@ if (!$isLogged):
 
       <div class="text-center mb-8 relative z-10">
         <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-14 h-14 object-contain mx-auto mb-4" />
-        <h1 class="font-display font-bold text-[#F5F0DC] text-xl uppercase tracking-wider">GCP Award 2026</h1>
+        <h1 class="font-display font-bold text-[#F5F0DC] text-xl uppercase tracking-wider">Apresiasi Siswa Angkatan X Tahun 2026</h1>
         <p class="text-xs text-[#E2C12F] tracking-widest uppercase mt-1">Admin Dashboard Portal</p>
       </div>
 
@@ -464,7 +464,7 @@ $baseUrl = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Admin Dashboard | GCP Award 2026</title>
+  <title>Admin Dashboard | Metland Apresiasi Siswa</title>
   <link href="img/metschoo/Metschoo.png" rel="icon" />
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -517,7 +517,7 @@ $baseUrl = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
       <div class="flex items-center gap-2">
         <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-8 h-8 object-contain" />
         <div>
-          <h1 class="font-display font-bold text-[#F5F0DC] text-base tracking-wide leading-none">GCP Award 2026</h1>
+          <h1 class="font-display font-bold text-[#F5F0DC] text-base tracking-wide leading-none">Apresiasi Siswa</h1>
           <span class="text-[9px] uppercase tracking-widest text-secondary font-semibold">
             <?= $isAdmin ? 'Super Admin Panel' : 'Wali Kelas ' . htmlspecialchars($adminClassroom) ?>
           </span>
@@ -745,19 +745,26 @@ $baseUrl = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
                   <?php
                   $inviteLink = $baseUrl . "?code=" . $row['code'];
                   $message = <<<TEXT
-Halo *{$row['name']}*,
+Kepada Yth.
+Bapak/Ibu Orang Tua/Wali dari *{$row['name']}* 
+di tempat
 
-Dengan hormat, kami mengundang Anda untuk menghadiri acara *GCP Award 2026 – Generasi Cinta Prestasi* SMK Pariwisata Metland School.
+Dengan hormat, Kepala SMK Pariwisata Metland School mengundang Bapak/Ibu, untuk menghadiri
 
-Silakan melihat undangan personal Anda melalui tautan berikut:
+*Apresiasi Siswa Angkatan X Tahun 2026 SMK Pariwisata Metland School*
+
+Yang akan dilaksanakan pada:
+* Hari/Tgl : Sabtu, 4 Juli 2026
+* Pukul : 07.00 - selesai
+* Tempat : Ballroom Metropolitan Mall Cileungsi
+
+*Klik link di bawah ini* untuk informasi lebih lengkap dan pastikan untuk mengisi konfirmasi kehadiran (RSVP)! 
 {$inviteLink}
+Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu dapat hadir.
 
-Mohon berkenan melakukan konfirmasi kehadiran melalui tautan tersebut.
-
-*Informasi Penting*
-Setiap siswa hanya diperkenankan membawa *1 (satu) orang pendamping*.
-
-Atas perhatian dan kehadiran Anda, kami ucapkan terima kasih.
+Hormat Kami,
+*Dr. Darmawan Sunarja, Drs., MM. Par*
+Kepala SMK Pariwisata Metland School
 TEXT;
 
                   $waUrl = "https://api.whatsapp.com/send?text=" . rawurlencode($message);
