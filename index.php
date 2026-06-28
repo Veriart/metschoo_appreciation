@@ -188,7 +188,7 @@ if (!empty($code)) {
         <div class="absolute inset-0 border-4 border-secondary/20 rounded-full"></div>
         <div class="absolute inset-0 border-4 border-t-secondary rounded-full animate-spin"></div>
       </div>
-      <p class="text-[#D2DBC6] font-display text-2xl tracking-[0.3em] uppercase mb-1">GCP Award 2026</p>
+      <p class="text-[#D2DBC6] font-display text-2xl tracking-[0.3em] uppercase mb-1">Apresiasi Siswa 2026</p>
       <p class="text-[#D2DBC6]/40 text-xs tracking-widest uppercase">SMK Pariwisata Metland School</p>
     </div>
 
