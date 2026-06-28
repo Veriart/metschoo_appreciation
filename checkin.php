@@ -3,6 +3,12 @@
 // Guest Attendance Check-in Page (No PIN Required)
 
 require_once 'config.php';
+session_start();
+
+if (!isset($_SESSION['admin_logged']) || !$_SESSION['admin_logged']) {
+  header('Location: admin.php');
+  exit;
+}
 
 $code = $_GET['code'] ?? '';
 $directCheckin = null;

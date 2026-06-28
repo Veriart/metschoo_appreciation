@@ -640,7 +640,7 @@ if (!empty($code)) {
                 <!-- Ticket Header -->
                 <div class="flex items-center gap-2 mb-4">
                   <img src="img/metschoo/Metschoo.png" alt="Logo" class="w-8 h-8 object-contain" />
-                  <span class="font-display text-white text-base font-bold tracking-wide">GCP Award 2026</span>
+                  <span class="font-display text-white text-base font-bold tracking-wide">Apresiasi Siswa 2026</span>
                 </div>
                 
                 <div class="w-full border-b border-dashed border-secondary/25 my-2"></div>
